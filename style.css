@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css? family-Poppins:200,300,400,500,600,700,800,900 & display-swap');
+
+:root {
+    --background-color: #fbc87e;
+    --logo-color: #fff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    z-index: 1;
+    align-items: center
+}
+
+header .logo {
+    font-weight: 700;
+    color: var(--logo-color);
+    text-decoration: none;
+    font-size: 2em;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--logo-color);
+    font-size: 1.1em;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: linear-gradient(to top, #fbc87e 20%, transparent);
+} 
+
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about {
+    position: relative;
+    padding: 100px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .textbx{
+    max-width: 40%;
+}
+
+.container .textbx .title{
+    font-size: 2.5em;
+    color: #792a0d;
+}
+
+.container .textbx p{
+    font-size: 1.1em;
+    color: #792a0d;
+}
+
+.imgbx{
+    width: 40%;
+}
+
+.imgbx img{
+    max-width: 100%;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px; 
+    background: #792a0d;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn:hover{
+    position:relative;
+    background: #ffffff;
+    color: #792a0d;
+}
